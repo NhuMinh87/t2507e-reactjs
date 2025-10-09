@@ -1,21 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/Button'
-import Navigation from './pricing/Navigation'
-import Section1 from './pricing/Section1'
-import Section2 from './pricing/Section2'
-import Footer from './pricing/Footer'
+import NavMenu from './components/NavMenu'
+import { Route, Routes } from 'react-router-dom'
+import Category from './pages/Category'
+import Home from './pages/Home'
+import Cart from './pages/Cart'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import AboutUs from './pages/AboutUs'
+import ContactUs from './pages/ContactUs'
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <Navigation/>
-      <Section1/>
-      <Section2/>
-      <Footer/>
+      <NavMenu/>
+      <main>
+        <Routes>
+            <Route path='/' Component={Home}/>
+            <Route path='/category' Component={Category}/>
+            <Route path='/cart' Component={Cart}/>
+            <Route path='/login' Component={Login}/>
+            <Route path='/register' Component={Register}/>
+            <Route path='/aboutus' Component={AboutUs}/>
+            <Route path='/contactus' Component={ContactUs}/>
+        </Routes>
+      </main>
     </>
   )
 }
