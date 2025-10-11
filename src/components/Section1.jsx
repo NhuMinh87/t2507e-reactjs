@@ -1,14 +1,38 @@
-function Section1(){
+import { useState } from "react";
+
+function Section1(props){
+    const msg = props.message; //định nghĩa cách nhận dữ liệu
+    const stars = props.sts;
+    
+    //khai báo 1 state
+    const [count, setCount] = useState(0); //khai báo let count= 0
+    function increment(){
+        // tăng giá trị biến count lên
+        setCount(count + 1); //hiểu count = count +1
+        // nạp giá trị mới vào html ở dưới -> tự động không cần làm gì
+    }  
+    
+     function decrement(){
+        setCount(count -1); 
+        //hiểu count = count -1
+        // nạp giá trị mới vào html ở dưới -> tự động không cần làm gì
+        if (count <= 0) {
+            setCount(0);
+        // cách khác if(count > 0)
+        // setCount (count>0?count-1:0);
+
+        }
+    }  
+
+
     return (
-          <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                <h3>Hello, world</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit at optio ea similique minus deleniti iste, recusandae natus dolor!</p>
-                        <button>Learn more</button>
-                </div>
-            </div>
-        </div>      
+        <div className="container">
+            <h2>{msg}</h2>
+            <p> Stars: {stars} </p>
+            <h3>Number: {count}</h3>
+            <button onClick={increment}className="btn btn-primary" type= "button">Click here</button>
+            <button onClick={decrement}className="btn btn-danger" type= "button">Decrease</button>
+        </div>  
     );
 }
 export default Section1;

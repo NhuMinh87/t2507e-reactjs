@@ -1,3 +1,273 @@
+*{ /* set chung style cho tất cả các phần tử */
+box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+margin: 0;
+padding: 0;
+}
+
+a{
+text-decoration: none; /* bỏ gạch chân của thẻ a */
+color: #444444;
+}
+
+h1{
+font-size: 65px;
+font-weight: 100; /* độ đậm của chữ */
+}
+
+h2{
+font-size: 55px;
+font-weight: 100; /* độ đậm của chữ */
+}
+
+h3{
+font-size: 45px;
+font-weight: 10; /* độ đậm của chữ */
+}
+
+h4{
+font-size: 40px;
+font-weight: 10; /* độ đậm của chữ */
+}
+
+h5{
+font-size: 25px;
+font-weight: 100;
+}
+
+
 body{
-    background-color: red;
+font-family: "Cormorant Garamond", sans-serif;
+background-color: #fafafa; /* màu nền của trang web */
+font-size: 20px; /* kích thước chữ */
+font-weight: 100; /* độ đậm của chữ */
+color: #444444; /* màu chữ */
+text-align:left; /* canh trái, phải, giữa */
+padding: 0px;/* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
+}
+
+p{
+margin-bottom: 0.75 rem; /* khoảng cách giữa các đoạn văn */
+}
+
+/* layout */
+/* style cho section */
+.section{
+float: none; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+width: 100%; /* chiều rộng của thẻ section */
+}
+
+.container{ /*tạo 1 hộp nội dung giữa các section */
+float: none;
+margin: 0 auto;
+width: 1360px; /* chiều rộng của thẻ container */
+}
+
+img{
+max-width:100%; /* cỡ hình ảnh về kích thước của thẻ cha nếu nó vượt quá*/
+}
+
+.header {
+position: absolute;   /* header trôi nổi */
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+background: transparent; /* trong suốt */
+}
+
+.slider img {
+width: 100%;
+height: 100vh; /* chiều cao chiếm cả màn hình */
+object-fit: cover;
+}
+
+
+/* ví dụ điều chỉnh các phần */
+.nav{
+background-color: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: 'Montserrat';
+font-size: 13px;
+font-weight: 400;
+margin-left: 30px;
+
+}   
+
+.nav ul{
+display: flex;  /* dàn hàng ngang giống float left, giống inline; ko đặt flex direction thi mặc định là row, xếp hàng ngang  */
+margin-left: 50px ;
+margin-right: 50px;
+}
+
+
+.nav ul li{ /* viết theo gia pha */
+list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+margin-right: 70px; /* khoảng cách giữa các thẻ li */
+padding-top: 25px;
+padding-bottom: 15px;
+}   
+
+.nav li a{
+color: black;
+}
+
+.CHAAI {
+font-size: 40px;
+letter-spacing: 6px;
+font-weight: 350;
+margin-right: -10000px;
+}
+
+.slider{
+padding: 0px 0px 100px 0px;
+}
+
+.health{
+display: flex;
+justify-content: center; /* căn giữa cả nhóm */
+gap: 20px; /* khoảng cách giữa các icon, chỉnh nhỏ/ lớn tuỳ ý */
+padding: 0px 0px 50px 0px;
+}
+.health-01{
+flex:1;
+}
+
+.health-02{
+flex:1.1;
+}
+
+.unique{
+padding: 0px 0px 50px 0px;
+}
+
+.offers{
+display:flex;
+gap: 0px;
+padding: 30px 0px 50px 0px;
+}
+
+.offers-01{
+flex: 40%;
+text-align: left;
+}
+
+.offers-02{
+flex: 60%
+}
+
+.magic{
+text-align: center;
+padding: 0px 0px 50px 0px;
+}
+
+.discover{
+display: flex;
+gap: 0px;
+padding: 20px 0px 50px 0px;
+}
+
+.discover-01{
+flex: 1.5;
+}
+
+.discover-02{
+flex: 1;
+text-align: center;
+}
+
+.blog{
+padding: 0px 0px 50px 0px;
+height: 250px;
+}
+
+.hover{
+display:flex;
+gap: 100px;
+padding: 30px 0px 50px 0px;
+font-size: 14px;
+color: #8d9c73;
+}
+
+.hover-left{
+flex:1;
+}
+
+.hover-right{
+flex: 1.8;
+}    
+
+.hover-left img, .hover-right img{
+width: 100%;
+height: 100%;
+object-fit: cover; /* cắt cho vừa */
+}
+
+.hover-left :hover, .hover-right :hover{ /*hiệu ứng khi hover chuột vào thẻ, giúp người dùng dễ nhận diện phần tử khi sử dụng */
+transform: scale(1.05); /*phóng to thẻ khi hover lên 10%*/
+transition: all 2.0s ease; /*hiệu ứng chuyển đổi mượt mà trong 3s*/
+}
+
+.instagram{
+padding: 20px 0px 80px 0px;
+color: #8d9c73;
+}
+
+button{
+font-family: "Cormorant Garamond", sans-serif;
+color: whitesmoke;
+width: 180px;
+height: 50px;
+border-radius: none;
+font-size: 14px;
+margin: 5px;
+padding: 5px 30px;
+border: 1px solid #E9F0E9;
+background-color: #8d9c73;
+}
+
+.footer-00{
+display: grid;
+grid-template-columns: 3.5fr 3fr 3.5fr;
+gap: 0;
+background-color:#8d9c73;
+color: wheat;
+font-size: 22px;
+height: 400px;
+line-height: 2.0;
+text-align: center;
+padding: 100px 0px 100px 0px;
+border-bottom: 0.5px solid wheat;
+}
+
+.footer ul li{
+list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+}
+
+.footer-01, .footer-03{
+text-align: center;
+}
+
+.footer-04{
+color: wheat;
+font-size: 18px;
+text-align: center;
+background-color:#8d9c73;
+height: 70px;
+padding-top: 20px;
+}
+
+.footer-02{
+text-align: center;
+border-left: 0.5px solid wheat;
+border-right: 0.5px solid wheat;
+} 
+
+.logo{
+display: flex;
+justify-content: center; /* căn giữa cả nhóm */
+gap: 20px; /* khoảng cách giữa các icon, chỉnh nhỏ/ lớn tuỳ ý */
+font-size: 20px;
 }

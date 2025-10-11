@@ -8,6 +8,6 @@ function Button() { // khai báo hàm thành phần giao diện
         <h1>Button component</h1>
         <button>Click me</button>
     </div>
-);
+    );
 }
 export default Button; // xuất thành 1 module giao diện - để có thể sử dụng nơi khác
