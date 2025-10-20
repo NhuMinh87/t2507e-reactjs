@@ -34,7 +34,6 @@ font-size: 25px;
 font-weight: 100;
 }
 
-
 body{
 font-family: "Cormorant Garamond", sans-serif;
 background-color: #fafafa; /* màu nền của trang web */
@@ -60,7 +59,7 @@ width: 100%; /* chiều rộng của thẻ section */
 .container{ /*tạo 1 hộp nội dung giữa các section */
 float: none;
 margin: 0 auto;
-width: 1360px; /* chiều rộng của thẻ container */
+width: 1300px; /* chiều rộng của thẻ container */
 }
 
 img{

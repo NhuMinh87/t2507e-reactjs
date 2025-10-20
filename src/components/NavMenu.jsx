@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "./../assets/css/NavMenu.css"
 function NavMenu() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">

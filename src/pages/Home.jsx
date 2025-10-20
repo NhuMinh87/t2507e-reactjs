@@ -2,6 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import "./../assets/css/home.css"
 import Section1 from '../components/Section1';
 import Weather from '../components/Weather';
+import Forecast from '../components/Forecast';
 function Home (){
     const data = {
        msg: "Hello World",
@@ -11,8 +12,9 @@ function Home (){
         <div className="container">
             <h1>Home Page</h1>
             <Weather/>
-            <Section1 message= {data.msg} sts={4}/>
-            <Section1 message= {data.chat} sts={5}/>
+            <Section1 message= {data.msg} sts={14}/>
+            <Section1 message= {data.chat} sts={15}/>
+            <Forecast/>
                 <Carousel>
                 <Carousel.Item>
                     <img src= "images/blog-01.png"/>

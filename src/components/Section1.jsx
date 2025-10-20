@@ -6,13 +6,14 @@ function Section1(props){
     
     //khai báo 1 state
     const [count, setCount] = useState(0); //khai báo let count= 0
+    
     function increment(){
         // tăng giá trị biến count lên
         setCount(count + 1); //hiểu count = count +1
         // nạp giá trị mới vào html ở dưới -> tự động không cần làm gì
     }  
     
-     function decrement(){
+    function decrement(){
         setCount(count -1); 
         //hiểu count = count -1
         // nạp giá trị mới vào html ở dưới -> tự động không cần làm gì

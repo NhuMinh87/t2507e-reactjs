@@ -1,0 +1,146 @@
+*{ /* set chung style cho táº¥t cáº£ cĂ¡c pháº§n tá»­ */
+    box-sizing: border-box; /* bao gá»“m cáº£ padding vĂ  border vĂ o trong chiá»u rá»™ng vĂ  chiá»u cao cá»§a tháº» */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* bá» gáº¡ch chĂ¢n cá»§a tháº» a */
+    color: #444444;
+}
+
+h1{
+    font-size: 65px;
+    font-weight: 100; /* Ä‘á»™ Ä‘áº­m cá»§a chá»¯ */
+}
+
+h2{
+    font-size: 55px;
+    font-weight: 100; /* Ä‘á»™ Ä‘áº­m cá»§a chá»¯ */
+}
+
+h3{
+    font-size: 45px;
+    font-weight: 200; /* Ä‘á»™ Ä‘áº­m cá»§a chá»¯ */
+}
+
+
+body{
+    font-family: "Cormorant Garamond", sans-serif;
+    background-color: #fafafa; /* mĂ u ná»n cá»§a trang web */
+    font-size: 22px; /* kĂ­ch thÆ°á»›c chá»¯ */
+    font-weight: 100; /* Ä‘á»™ Ä‘áº­m cá»§a chá»¯ */
+    color: #444444; /* mĂ u chá»¯ */
+    text-align:left; /* canh trĂ¡i, pháº£i, giá»¯a */
+    padding: 0px 20px;/* khoáº£ng cĂ¡ch giá»¯a viá»n vĂ  ná»™i dung cá»§a tháº» body, Ä‘á»u tá»± thĂªm so vá»›i hÆ°á»›ng dáº«n cá»§a tháº§y vĂ¬ tháº¥y Ä‘áº¹p hÆ¡n*/
+    line-height: 1.5; /* khoáº£ng cĂ¡ch giá»¯a cĂ¡c dĂ²ng  1.5 * 15px = 22.5px, tá»± thĂªm so vá»›i hÆ°á»›ng dáº«n cá»§a tháº§y*/
+}
+
+p{
+    margin-bottom: 0.75 rem; /* khoáº£ng cĂ¡ch giá»¯a cĂ¡c Ä‘oáº¡n vÄƒn */
+}
+
+.section{
+    float: left; /* cho phĂ©p cĂ¡c tháº» div Ä‘á»©ng cáº¡nh nhau: right */ 
+    width: 100%; /* chiá»u rá»™ng cá»§a tháº» section */
+}
+
+.container{ /*táº¡o 1 há»™p ná»™i dung giá»¯a cĂ¡c section */
+    float: none;
+    margin: 0 auto;
+    width: 1360px; /* chiá»u rá»™ng cá»§a tháº» container */
+}
+
+img{
+   max-width:100%; /* cá»¡ hĂ¬nh áº£nh vá» kĂ­ch thÆ°á»›c cá»§a tháº» cha náº¿u nĂ³ vÆ°á»£t quĂ¡*/
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding: 15px 0px 60px 0px;
+    margin: 0;
+    display: flex;              /* Ä‘á»ƒ cĂ¡c pháº§n náº±m ngang */
+    gap: 5px;                    /* khoáº£ng cĂ¡ch giá»¯a pháº§n tá»­ */
+}
+
+
+.breadcrumb li + li::before {
+    content: " / ";              /* cĂ¡i dáº¥u â€œ/â€ giá»¯a cĂ¡c pháº§n */
+    margin: 0 5px;
+}
+
+button{
+    font-family: "Cormorant Garamond", sans-serif;
+    color: #444444;
+    width: 180px;
+    height: 60px;
+    border-radius: none;
+    font-size: 22px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #E9F0E9;
+    background-color: #E9F0E9;
+}
+
+.Featured{
+    padding: 0px 0px 30px 0px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* cá»™t trĂ¡i 1 pháº§n, cá»™t pháº£i 3 pháº§n */
+    gap: 20px;                      /* khoáº£ng cĂ¡ch giá»¯a 2 cá»™t */
+    padding: 30px 0px 50px 0px;
+}
+.list-left img, .list-right img {
+    max-width: 100%;
+    height: auto;   /* Ä‘á»ƒ áº£nh tá»± co giĂ£n giá»¯ tá»‰ lá»‡ */
+    display: block; /* trĂ¡nh khoáº£ng trá»‘ng dÆ°á»›i áº£nh */
+}
+
+.list ul li{
+    list-style: none;
+}
+
+.left-over{
+    padding: 0px 0px 40px 0px;
+}
+
+.right-over{
+    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.over-01, .over-02{
+    flex:1;
+}
+
+.over-02 select{
+    font-family: "Cormorant Garamond", sans-serif;
+    width: 350px;        /* rá»™ng báº±ng container */
+    height: 50px;       /* cao giá»‘ng input */
+    margin: 5px;
+    font-size: 20px;    /* chá»¯ to hÆ¡n */
+    padding: 10px;    /* khoáº£ng cĂ¡ch trong Ă´ */
+    border: 1px solid #ccc;
+    border-radius: 4px;  
+    text-align: center
+}
+
+.film{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.right-under{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: black;
+}

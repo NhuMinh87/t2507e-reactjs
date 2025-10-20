@@ -9,6 +9,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
+import Detail from './pages/Detail'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         <Routes>
             <Route path='/' Component={Home}/>
             <Route path='/category' Component={Category}/>
+            <Route path='/product/:id' Component={Detail}/>
             <Route path='/cart' Component={Cart}/>
             <Route path='/login' Component={Login}/>
             <Route path='/register' Component={Register}/>
