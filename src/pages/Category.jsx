@@ -41,7 +41,6 @@ function Category(){
     }
     return (
         <div className="container">
-
             <Row>
                 <Col xs={4}>
                     <h4>Shop By Category</h4>

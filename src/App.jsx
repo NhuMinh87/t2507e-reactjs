@@ -10,6 +10,7 @@ import Register from './pages/Register'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
 import Detail from './pages/Detail'
+import Checkout from "./components/Checkout";
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
             <Route path='/register' Component={Register}/>
             <Route path='/aboutus' Component={AboutUs}/>
             <Route path='/contactus' Component={ContactUs}/>
+            <Route path='/checkout' Component={Checkout}/>
         </Routes>
       </main>
     </>

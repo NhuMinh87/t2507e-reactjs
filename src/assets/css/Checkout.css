@@ -1,0 +1,83 @@
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 3rem;
+  background-color: #fefbf5;
+  font-family: "Georgia", serif;
+}
+
+.billing-form, .order-summary {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.billing-form {
+  flex: 2;
+}
+
+.order-summary {
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group input, 
+.form-group select, 
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.order-item, .order-subtotal, .order-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.order-total {
+  border-top: 2px solid #ddd;
+  padding-top: 1rem;
+}
+
+.payment-option {
+  margin-bottom: 1rem;
+}
+
+.payment-option img {
+  width: 60px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.place-order-btn {
+  width: 100%;
+  background: #0b4b3b;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background: #13614a;
+}
