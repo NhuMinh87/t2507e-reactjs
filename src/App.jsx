@@ -10,7 +10,7 @@ import Register from './pages/Register'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
 import Detail from './pages/Detail'
-import Checkout from "./components/Checkout";
+import Checkout from "./pages/Checkout";
 
 function App() {
   

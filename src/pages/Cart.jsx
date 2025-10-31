@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Checkout from "../components/Checkout";
 import "./../assets/css/Cart.css"; // tạo file CSS riêng nhé
 
 
@@ -99,7 +98,7 @@ const Cart = () => {
             <span>Total</span>
             <span>${subtotal.toFixed(2)}</span>
           </div>
-          <button className="checkout-btn">Proceed to checkout</button>
+          <button onClick={()=>{window.location.href="/checkout"}} className="checkout-btn">Proceed to checkout</button>
         </div>
       </div>
     </div>
