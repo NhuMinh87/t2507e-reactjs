@@ -1,36 +1,27 @@
 import './App.css'
-import Button from './components/Button'
-import NavMenu from './components/NavMenu'
-import { Route, Routes } from 'react-router-dom'
-import Category from './pages/Category'
-import Home from './pages/Home'
-import Cart from './pages/Cart'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import AboutUs from './pages/AboutUs'
-import ContactUs from './pages/ContactUs'
-import Detail from './pages/Detail'
-import Checkout from "./pages/Checkout";
+import Header from './components/Header.jsx'
+import Object from './components/Object.jsx'
+import Subject from './components/Subject.jsx'
 
 function App() {
-  
   return (
-    <>
-      <NavMenu/>
+    <div>
+      <Header />
+
+      {/* Banner section */}
+      <div className="banner">
+        <img src="/images/banner-fpt.png" alt="FPT Aptech Banner" />
+      </div>
+
       <main>
-        <Routes>
-            <Route path='/' Component={Home}/>
-            <Route path='/category' Component={Category}/>
-            <Route path='/product/:id' Component={Detail}/>
-            <Route path='/cart' Component={Cart}/>
-            <Route path='/login' Component={Login}/>
-            <Route path='/register' Component={Register}/>
-            <Route path='/aboutus' Component={AboutUs}/>
-            <Route path='/contactus' Component={ContactUs}/>
-            <Route path='/checkout' Component={Checkout}/>
-        </Routes>
+        <Object />
+        <Subject />
       </main>
-    </>
+
+      <footer className="footer">
+        <p>Created by Minh - ReactJS Practice</p>
+      </footer>
+    </div>
   )
 }
 

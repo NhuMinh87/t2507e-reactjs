@@ -42,3 +42,85 @@
 }
 
 
+/* ===== OBJECT SECTION ===== */
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.box {
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  max-height: 220px; /* giữ chiều cao hợp lý mà không crop ảnh */
+  object-fit: contain; /* hiển thị toàn bộ ảnh */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #f9f9f9; /* thêm nền nhẹ nếu ảnh nhỏ hơn khung */
+}
+
+
+.box h4 {
+  color: #2f4db0;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.box p {
+  font-size: 14px;
+  color: #333;
+  padding: 0 15px;
+  line-height: 1.5;
+}
+
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px 0; /* khoảng cách trên - dưới */
+}
+
+.banner img {
+  width: 80%; /* ✅ giảm còn 80% chiều ngang */
+  max-width: 1000px; /* không vượt quá 1000px */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* thêm bóng nhẹ cho sang */
+}
+
+
+.program-description {
+  max-width: 1000px;
+  margin: 30px auto;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: #333;
+}
+

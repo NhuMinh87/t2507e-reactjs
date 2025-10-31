@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "subject": "ReactJS",
+    "description": "Learn frontend ReactJS to build user interfaces easily.",
+    "image": "images/reactjs.png"
+  },
+  {
+    "id": 2,
+    "subject": "PHP",
+    "description": "Learn PHP backend to understand server and database connection.",
+    "image": "images/php.png"
+  },
+  {
+    "id": 3,
+    "subject": ".NET",
+    "description": "Learn .NET Core to build enterprise web apps.",
+    "image": "images/net.png"
+  }
+]
